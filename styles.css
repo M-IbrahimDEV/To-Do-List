@@ -1,0 +1,30 @@
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+body{
+    display: flex;
+    justify-content: flex-start;
+}
+.sidebar{
+    background-color: #1C1D22;
+    height: 100%;
+    width: 90px;
+}
+.projectsbar{
+    background-color: #ffffff;
+    box-shadow: 180px 40px 80px #1c1d2210;
+    width: 318px;
+    height: 100%;
+}
