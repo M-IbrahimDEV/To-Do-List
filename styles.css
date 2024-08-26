@@ -1,6 +1,7 @@
 
 *{
     box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
 }
 
 html, body{
@@ -9,6 +10,12 @@ html, body{
     height: 100%;
     width: 100%;
 }
+p{
+    margin: 0%;
+    padding: 0%;
+}
+
+
 
 
 
@@ -24,7 +31,133 @@ body{
 }
 .projectsbar{
     background-color: #ffffff;
-    box-shadow: 180px 40px 80px #1c1d2210;
+    box-shadow: 40px 180px 80px #1c1d2210;
     width: 318px;
     height: 100%;
+}
+
+
+
+.right{
+    flex-grow: 10;
+    padding: 0px 32px;
+}
+
+.header{
+    height: 94px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wlcm{
+    font-size: 20px;
+    font-weight: bold;
+}
+.settings{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.settings *{
+    min-width: 22px;
+    min-height: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 22px;
+}
+.settings .searchicon{
+    background-image: url(res/search.png);
+}
+.settings .notificationicon{
+    background-image: url(res/bell.png);
+}
+.settings .datecalender{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.settings .datecalender .calendericon{
+    background-image: url(res/calender.png);
+    margin: 0%;
+}
+.settings .datecalender .datetext{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(28, 29, 34, 0.5);
+    margin-left: 8px;
+    transform: translateY(1px);
+}
+.settings .avatar{
+    background-image: url(res/avatar.jpeg);
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+}
+
+.menu{
+    height:45px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgba(28, 29, 34, 0.08);
+    background-color: #ffffff;
+}
+.main{
+    width: 100%;
+    max-height: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+}
+.section{
+    border-radius: 12px;
+    border: 2px dashed rgba(28, 29, 34, 0.08);
+    padding: 16px;
+    margin-right: 22px;
+}
+.section:last-child{
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+
+.top{
+    height: 18px;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.add img{
+    background-color: rgba(28, 29, 34, 0.08);
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+
+
+
+
+
+.demo{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+}
+.demobig{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
 }
