@@ -2,9 +2,34 @@
 <html>
     <head>
         <title>SORRY</title>
+        <style>
+            .tab-container {
+    display: flex;
+    border-bottom: 1px solid lightgray; /* Light gray border under the whole container */
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent; /* Start with no border */
+    transition: border-color 0.3s ease;
+}
+
+.tab:not(.active) {
+    border-bottom: 3px solid lightgray; /* Inactive tabs get a light gray border */
+}
+
+.tab.active {
+    border-bottom: 3px solid black; /* Active tab gets a black border */
+}
+        </style>
     </head>
     <body>
         <h2>Sorry</h2>
         <p>Hi, We havent made this page yet, yeah so just go back, bye, see ya latter</p>
+        <div class="tab-container">
+            <div class="tab active">Board view</div>
+            <div class="tab">Add view</div>
+        </div>
     </body>
 </html>
