@@ -10,12 +10,68 @@
         <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-
-        <div class="sidebar">
-
-        </div>
-        <div class="projectsbar">
-
+        <div class="fixed">
+            <div class="sidebar">
+                
+            </div>
+            <div class="projectsbar">
+                <div class="projects-dropdown">
+                    <div class="menu-section" id="projects">
+                        <div class="menu-header bold font-16" onclick="toggleSection('projects')">
+                            Projects
+                          </div>
+                          <div class="menu-content semibold font-16">
+                            <ul>
+                              <li class="content-active">All projects (3)</li>
+                              <li>Design system</li>
+                              <li>User flow</li>
+                              <li>UX research</li>
+                            </ul>
+                          </div>
+                    </div>
+                
+                    <div class="menu-section" id="tasks">
+                        <div class="menu-header font-16 bold" onclick="toggleSection('tasks')">
+                            Tasks
+                        </div>
+                        <div class="menu-content semibold font-16">
+                            <ul>
+                                <li class="content-active">All tasks (11)</li>
+                                <li>To do (4)</li>
+                                <li>In progress (4)</li>
+                                <li>Done (3)</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div class="menu-section" id="reminders">
+                        <div class="menu-header font-16 bold" onclick="toggleSection('reminders')">
+                          Reminders
+                        </div>
+                        <div class="menu-content font-16 semibold">
+                          <ul>
+                            <li>Reminders section</li>
+                            <li class="content-active">lorem</li>
+                            <li>Ipsum</li>
+                          </ul>
+                        </div>
+                    </div>
+                
+                    <div class="menu-section" id="messengers">
+                        <div class="menu-header bold font-16" onclick="toggleSection('messengers')">
+                          Messengers
+                        </div>
+                        <div class="menu-content font-16 semibold">
+                          <ul>
+                            <li>Messengers section</li>
+                            <li>nothin</li>
+                            <li class="content-active">special</li>
+                            <li>here</li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="right">
             <div class="header">
@@ -43,7 +99,8 @@
                 </div>
             </div>
             <div class="main">
-                <div class="section">
+                <div ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragleave(event)" class="section">
+                    
                     <div class="top font-14 semibold">
                         <p class="text">To Do(4)</p>
                         <div class="add">
@@ -51,8 +108,182 @@
                         </div>
                     </div>
 
+                    <div draggable="true" ondragstart="drag(event)" class="task">
+                        
+                        <div class="titlecontainer flex-r-sb">
+                            <div class="l-title">
+                                <div class="title bold font-16">
+                                    Add Product to the Market
+                                </div>
+                                <div class="describtion medium font-14 color-5 ">
+                                    Ui8-MarketPlace
+                                </div>
+                            </div>
+                            <div class="r-title">
+                                <div class="t-dots"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progressinfo flex-r-sb">
+                                <div class="progresstext semibold font-14 color-5">
+                                    Progress
+                                </div>
+                                <div class="progressnumber semibold font-14">
+                                    10/10
+                                </div>
+                            </div>
+                            <div class="progressbar">
+                                <div class="progresstracker"></div>
+                            </div>
+                        </div>
+                        <div class="info semibold font-14 flex-r-sb">
+                            <div class="progressdate">
+                                7 Jan 2024
+                            </div>
+                            <div class="extras color-5 flex-r-e">
+                                <div class="comments">
+                                    17
+                                </div>
+                                <div class="clip">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div draggable="true" ondragstart="drag(event)" class="task">
+                        
+                        <div class="titlecontainer flex-r-sb">
+                            <div class="l-title">
+                                <div class="title bold font-16">
+                                    Add Product to the Market
+                                </div>
+                                <div class="describtion medium font-14 color-5 ">
+                                    Ui8-MarketPlace
+                                </div>
+                            </div>
+                            <div class="r-title">
+                                <div class="t-dots"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progressinfo flex-r-sb">
+                                <div class="progresstext semibold font-14 color-5">
+                                    Progress
+                                </div>
+                                <div class="progressnumber semibold font-14">
+                                    10/10
+                                </div>
+                            </div>
+                            <div class="progressbar">
+                                <div class="progresstracker"></div>
+                            </div>
+                        </div>
+                        <div class="info semibold font-14 flex-r-sb">
+                            <div class="progressdate">
+                                7 Jan 2024
+                            </div>
+                            <div class="extras color-5 flex-r-e">
+                                <div class="comments">
+                                    17
+                                </div>
+                                <div class="clip">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div draggable="true" ondragstart="drag(event)" class="task">
+                        
+                        <div class="titlecontainer flex-r-sb">
+                            <div class="l-title">
+                                <div class="title bold font-16">
+                                    Add Product to the Market
+                                </div>
+                                <div class="describtion medium font-14 color-5 ">
+                                    Ui8-MarketPlace
+                                </div>
+                            </div>
+                            <div class="r-title">
+                                <div class="t-dots"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progressinfo flex-r-sb">
+                                <div class="progresstext semibold font-14 color-5">
+                                    Progress
+                                </div>
+                                <div class="progressnumber semibold font-14">
+                                    10/10
+                                </div>
+                            </div>
+                            <div class="progressbar">
+                                <div class="progresstracker"></div>
+                            </div>
+                        </div>
+                        <div class="info semibold font-14 flex-r-sb">
+                            <div class="progressdate">
+                                7 Jan 2024
+                            </div>
+                            <div class="extras color-5 flex-r-e">
+                                <div class="comments">
+                                    17
+                                </div>
+                                <div class="clip">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div draggable="true" ondragstart="drag(event)" class="task">
+                        
+                        <div class="titlecontainer flex-r-sb">
+                            <div class="l-title">
+                                <div class="title bold font-16">
+                                    Add Product to the Market
+                                </div>
+                                <div class="describtion medium font-14 color-5 ">
+                                    Ui8-MarketPlace
+                                </div>
+                            </div>
+                            <div class="r-title">
+                                <div class="t-dots"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progressinfo flex-r-sb">
+                                <div class="progresstext semibold font-14 color-5">
+                                    Progress
+                                </div>
+                                <div class="progressnumber semibold font-14">
+                                    10/10
+                                </div>
+                            </div>
+                            <div class="progressbar">
+                                <div class="progresstracker"></div>
+                            </div>
+                        </div>
+                        <div class="info semibold font-14 flex-r-sb">
+                            <div class="progressdate">
+                                7 Jan 2024
+                            </div>
+                            <div class="extras color-5 flex-r-e">
+                                <div class="comments">
+                                    17
+                                </div>
+                                <div class="clip">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="section">
+                <div ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragleave(event)" class="section">
+
                     <div class="top font-14 semibold">
                         <p class="text">In Progress(4)</p>
                         <div class="add">
@@ -60,8 +291,183 @@
                         </div>
                     </div>
                     
+                    
+                    <div draggable="true" ondragstart="drag(event)" class="task">
+                        
+                        <div class="titlecontainer flex-r-sb">
+                            <div class="l-title">
+                                <div class="title bold font-16">
+                                    Add Product to the Market
+                                </div>
+                                <div class="describtion medium font-14 color-5 ">
+                                    Ui8-MarketPlace
+                                </div>
+                            </div>
+                            <div class="r-title">
+                                <div class="t-dots"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progressinfo flex-r-sb">
+                                <div class="progresstext semibold font-14 color-5">
+                                    Progress
+                                </div>
+                                <div class="progressnumber semibold font-14">
+                                    10/10
+                                </div>
+                            </div>
+                            <div class="progressbar">
+                                <div class="progresstracker"></div>
+                            </div>
+                        </div>
+                        <div class="info semibold font-14 flex-r-sb">
+                            <div class="progressdate">
+                                7 Jan 2024
+                            </div>
+                            <div class="extras color-5 flex-r-e">
+                                <div class="comments">
+                                    17
+                                </div>
+                                <div class="clip">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div draggable="true" ondragstart="drag(event)" class="task">
+                        
+                        <div class="titlecontainer flex-r-sb">
+                            <div class="l-title">
+                                <div class="title bold font-16">
+                                    Add Product to the Market
+                                </div>
+                                <div class="describtion medium font-14 color-5 ">
+                                    Ui8-MarketPlace
+                                </div>
+                            </div>
+                            <div class="r-title">
+                                <div class="t-dots"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progressinfo flex-r-sb">
+                                <div class="progresstext semibold font-14 color-5">
+                                    Progress
+                                </div>
+                                <div class="progressnumber semibold font-14">
+                                    10/10
+                                </div>
+                            </div>
+                            <div class="progressbar">
+                                <div class="progresstracker"></div>
+                            </div>
+                        </div>
+                        <div class="info semibold font-14 flex-r-sb">
+                            <div class="progressdate">
+                                7 Jan 2024
+                            </div>
+                            <div class="extras color-5 flex-r-e">
+                                <div class="comments">
+                                    17
+                                </div>
+                                <div class="clip">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div draggable="true" ondragstart="drag(event)" class="task">
+                        
+                        <div class="titlecontainer flex-r-sb">
+                            <div class="l-title">
+                                <div class="title bold font-16">
+                                    Add Product to the Market
+                                </div>
+                                <div class="describtion medium font-14 color-5 ">
+                                    Ui8-MarketPlace
+                                </div>
+                            </div>
+                            <div class="r-title">
+                                <div class="t-dots"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progressinfo flex-r-sb">
+                                <div class="progresstext semibold font-14 color-5">
+                                    Progress
+                                </div>
+                                <div class="progressnumber semibold font-14">
+                                    10/10
+                                </div>
+                            </div>
+                            <div class="progressbar">
+                                <div class="progresstracker"></div>
+                            </div>
+                        </div>
+                        <div class="info semibold font-14 flex-r-sb">
+                            <div class="progressdate">
+                                7 Jan 2024
+                            </div>
+                            <div class="extras color-5 flex-r-e">
+                                <div class="comments">
+                                    17
+                                </div>
+                                <div class="clip">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div draggable="true" ondragstart="drag(event)" class="task">
+                        
+                        <div class="titlecontainer flex-r-sb">
+                            <div class="l-title">
+                                <div class="title bold font-16">
+                                    Add Product to the Market
+                                </div>
+                                <div class="describtion medium font-14 color-5 ">
+                                    Ui8-MarketPlace
+                                </div>
+                            </div>
+                            <div class="r-title">
+                                <div class="t-dots"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progressinfo flex-r-sb">
+                                <div class="progresstext semibold font-14 color-5">
+                                    Progress
+                                </div>
+                                <div class="progressnumber semibold font-14">
+                                    10/10
+                                </div>
+                            </div>
+                            <div class="progressbar">
+                                <div class="progresstracker"></div>
+                            </div>
+                        </div>
+                        <div class="info semibold font-14 flex-r-sb">
+                            <div class="progressdate">
+                                7 Jan 2024
+                            </div>
+                            <div class="extras color-5 flex-r-e">
+                                <div class="comments">
+                                    17
+                                </div>
+                                <div class="clip">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="section">
+                <div ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragleave(event)" class="section">
+
                     <div class="top font-14 semibold">
                         <p class="text ">Done(3)</p>
                         <div class="add">
@@ -69,9 +475,140 @@
                         </div>
                     </div>
                     
+                    
+                    <div draggable="true" ondragstart="drag(event)" class="task">
+                        
+                        <div class="titlecontainer flex-r-sb">
+                            <div class="l-title">
+                                <div class="title bold font-16">
+                                    Add Product to the Market
+                                </div>
+                                <div class="describtion medium font-14 color-5 ">
+                                    Ui8-MarketPlace
+                                </div>
+                            </div>
+                            <div class="r-title">
+                                <div class="t-dots"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progressinfo flex-r-sb">
+                                <div class="progresstext semibold font-14 color-5">
+                                    Progress
+                                </div>
+                                <div class="progressnumber semibold font-14">
+                                    10/10
+                                </div>
+                            </div>
+                            <div class="progressbar">
+                                <div class="progresstracker"></div>
+                            </div>
+                        </div>
+                        <div class="info semibold font-14 flex-r-sb">
+                            <div class="progressdate">
+                                7 Jan 2024
+                            </div>
+                            <div class="extras color-5 flex-r-e">
+                                <div class="comments">
+                                    17
+                                </div>
+                                <div class="clip">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div draggable="true" ondragstart="drag(event)" class="task">
+                        
+                        <div class="titlecontainer flex-r-sb">
+                            <div class="l-title">
+                                <div class="title bold font-16">
+                                    Add Product to the Market
+                                </div>
+                                <div class="describtion medium font-14 color-5 ">
+                                    Ui8-MarketPlace
+                                </div>
+                            </div>
+                            <div class="r-title">
+                                <div class="t-dots"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progressinfo flex-r-sb">
+                                <div class="progresstext semibold font-14 color-5">
+                                    Progress
+                                </div>
+                                <div class="progressnumber semibold font-14">
+                                    10/10
+                                </div>
+                            </div>
+                            <div class="progressbar">
+                                <div class="progresstracker"></div>
+                            </div>
+                        </div>
+                        <div class="info semibold font-14 flex-r-sb">
+                            <div class="progressdate">
+                                7 Jan 2024
+                            </div>
+                            <div class="extras color-5 flex-r-e">
+                                <div class="comments">
+                                    17
+                                </div>
+                                <div class="clip">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div draggable="true" ondragstart="drag(event)" class="task">
+                        
+                        <div class="titlecontainer flex-r-sb">
+                            <div class="l-title">
+                                <div class="title bold font-16">
+                                    Add Product to the Market
+                                </div>
+                                <div class="describtion medium font-14 color-5 ">
+                                    Ui8-MarketPlace
+                                </div>
+                            </div>
+                            <div class="r-title">
+                                <div class="t-dots"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progressinfo flex-r-sb">
+                                <div class="progresstext semibold font-14 color-5">
+                                    Progress
+                                </div>
+                                <div class="progressnumber semibold font-14">
+                                    10/10
+                                </div>
+                            </div>
+                            <div class="progressbar">
+                                <div class="progresstracker"></div>
+                            </div>
+                        </div>
+                        <div class="info semibold font-14 flex-r-sb">
+                            <div class="progressdate">
+                                7 Jan 2024
+                            </div>
+                            <div class="extras color-5 flex-r-e">
+                                <div class="comments">
+                                    17
+                                </div>
+                                <div class="clip">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
-
+        <script src="script.js"></script>
     </body>
 </HTML>
